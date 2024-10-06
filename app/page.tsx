@@ -18,7 +18,7 @@ export default function Home() {
   const calculateCost = (e: React.FormEvent) => {
     e.preventDefault()
     const start = new Date(`2000-01-01T${startTime}`)
-    let end = new Date(`2000-01-01T${endTime}`)
+    const end = new Date(`2000-01-01T${endTime}`)
 
     // If end time is earlier than start time, assume it's the next day
     if (end < start) {
